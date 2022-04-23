@@ -25,10 +25,10 @@
          <h4>Usuarios</h4>
   </div>
   <br>
-    <form class="row" action="{{route('user_search')}}" method="POST">
+    <form class="row" action="{{route('user_searchname')}}" method="POST">
       @csrf
       <div class="col-lg-10">
-     <input type="text" id="text" class="form-control form-control-lg">
+     <input type="text" id="text" name="text" class="form-control form-control-lg">
       </div>
   {{-- <div class="col-lg-2">
     <div style="text-align: center;" class="d-grid gap-2">

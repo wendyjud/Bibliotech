@@ -97,8 +97,19 @@ class UserController extends Controller
     //     return view('users')->with('users',$users);
     // }
 
+    /*FUNCIONA
     public function searchname(Request $request){
-        $users = DB::table('users')->where('name', $request->name)->paginate(4);
+        $users = DB::table('users')->where('name', $request->text)
+        ->paginate(4);
+        return view('users')->with('users',$users);
+    }*/
+
+    public function searchname(Request $request){
+        $separador='';
+        $users = DB::table('users')->where('name',$request->text)
+        ->orWhere('code',$request->text)
+        ->orWhere('degree',$request->text)
+        ->paginate(4);
         return view('users')->with('users',$users);
     }
 
