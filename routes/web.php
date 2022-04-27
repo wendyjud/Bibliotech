@@ -40,7 +40,6 @@ Route::get('/outMobile', [AuthController::class, 'outMobile'])->name('outMobile'
 
 route::get('panelMobile', function () {
     $loans = DB::table('loans')->where('id', Auth::user()->id)->where('status', '!=', 3)->get();
-//->where('id', Auth::user()->id)
      return view('mobile.dashboard')->with('loans', $loans);
  })->middleware('auth')->name('panelMobile');
 

@@ -108,7 +108,7 @@ class BookController extends Controller
     }
 
     public function search(Request $request){
-        //CAMBIO
+        //CORRECIÓN (cambio por Wendy)
             $books = DB::table('books')->where('isbn','like',"%".$request->text."%")
             ->orWhere('title' ,'like',"%".$request->text."%")
             ->orWhere('author' ,'like',"%".$request->text."%")

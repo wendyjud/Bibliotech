@@ -38,9 +38,6 @@
 </div>
   </form>
 
-<!-- CAMBIO-->
-
-
   <br>
 
   <div class="table-responsive">
@@ -77,17 +74,7 @@
 <br>
 </div>
 <br>
+<!--CORRECIÓN (cambio por wendy) , se eliminó el script de evento para la búsqueda de libros 
+debido a las adecuaciones-->
 
-<script>
-  /*window.addEventListener('load', function(){
-    document.getElementById("text").addEventListener("keyup", () => {
-      if((document.getElementById("text").value.length)>=1)
-      fetch(`/books/search?text=${document.getElementById("text").value}`,{method:'get' })
-      .then(response => response.text())
-      .then(html => {document.getElementById("resultados").innerHTML = html })
-      else
-      document.getElementById("resultados").innerHTML = ""
-    })
-  });*/
-</script>
 @endsection 

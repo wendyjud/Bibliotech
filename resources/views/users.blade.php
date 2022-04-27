@@ -93,16 +93,7 @@
   </form>
 </div> --}}
 
-<script>
-  window.addEventListener('load', function(){
-    document.getElementById("text").addEventListener("keyup", () => {
-      if((document.getElementById("text").value.length)>=1)
-      fetch(`/users/search?text=${document.getElementById("text").value}`,{method:'get' })
-      .then(response => response.text())
-      .then(html => {document.getElementById("resultados").innerHTML = html })
-      else
-      document.getElementById("resultados").innerHTML = ""
-    })
-  });
-</script>
+<!--CORRECIÓN (Cambio por wendy), se ha eliminado el script de evento listener para la busqueda de usuarios 
+debido a los cambios en mejora-->
+
 @endsection

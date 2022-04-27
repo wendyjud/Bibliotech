@@ -1,0 +1,22 @@
+BRUNO
+código:215487520
+contraseña: bruno
+
+ROBERTO
+código:215897634
+contraseña:roberto
+
+LUIS
+código:215778650
+contraseña: luis
+
+JORGE
+código:215777412
+contraseña:jorge
+
+WENDY
+código:215407727
+contraseña:wendy
+
+NOTA: una vez que ingresen pueden cambiar los datos de acceso como lo deseen.
+Esto es solo para dar acceso mas personalizado.
